@@ -6,7 +6,10 @@ import jakarta.validation.constraints.Positive;
 import lombok.Data;
 
 @Data
-public class AvaliacaoUpdateRequest {
+public class AvaliacaoFisicaCreateRequest {
+    @Positive(message = "O Id do aluno precisa ser positivo.")
+    private Long alunoId;
+
     @NotNull(message = "Preencha o campo corretamente.")
     @Positive(message = "${validatedValue}' precisa ser positivo.")
     private double peso;

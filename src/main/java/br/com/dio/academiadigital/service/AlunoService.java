@@ -31,7 +31,7 @@ public interface AlunoService {
     /**
      * Atualiza o aluno.
      * @param id id do Aluno que será atualizado.
-     * @param request requisição do tipo PUT com os dados referentes ao Aluno.
+     * @param request requisição do tipo PATCH com os dados referentes ao Aluno.
      * @return response de aluno atualizado.
      */
     AlunoResponse update(Long id, AlunoUpdateRequest request);
